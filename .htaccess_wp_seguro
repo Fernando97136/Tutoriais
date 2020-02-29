@@ -40,7 +40,7 @@ deny from all
 </files>
 # 4 - FIM
 
-# 5 - Imperdir atarques de "Script Injection"
+# 5 - Imperdir ataques de "Script Injection"
 Options +FollowSymLinks
 RewriteEngine On
 RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
