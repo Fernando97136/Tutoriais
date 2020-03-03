@@ -1,0 +1,25 @@
+Guia de Configuração do Cron do Mautic pela Hostinger:
+
+1° Acesse o Gerenciador de Arquivos da sua hospedagem
+
+2° Crie um arquivo chamado “cron_mautic.php”
+
+3° Acesse o Script Cron pelo Github
+Link de acesso: https://github.com/Fernando97136/Tutoriais/blob/master/script_cron_mautic
+
+5° Copie o Script do Github para o arquivo “cron_mautic.php” pelo gerenciador de arquivos
+
+6° Altere o código “Sua_senha” para uma senha sua segura e Salve
+
+7° Acesse o seu arquivo Cron com a sua senha
+Usando esse modelo: “https://seudominio.com/mautic/cron_mautic.php?sua_senha”
+8° Acesse o site da Easy Cron e crie uma conta
+
+Link do Easy Cron: https://www.easycron.com/
+9° Configure os crons abaixo:
+
+	Cron 1: Minutos 0, 15, 30 e 45 > mautic:segments:update
+	Cron 2: Minutos 5, 20, 35 e 50 > mautic:campaigns:update
+	Cron 3: Minutos 10, 25, 40 e 55 > mautic:campaigns:trigger
+  
+10° Prontinho os crons do Mautic já foram criados e estão sendo executados
