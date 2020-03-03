@@ -1,0 +1,27 @@
+Guia de instalação do Mautic na Hospedagem Hostinger:
+
+1° Habilite e acesse o SSH da sua hospedagem
+
+2° Faça o Download do Mautic pelo SSH
+Comando: wget –level=0 https://www.mautic.org/download/latest
+
+3° Extrai o arquivo usando pelo SSH
+Comando: unzip latest
+
+4° Apegue o arquivo zipado que foi baixado
+Comando: rm latest
+
+5° Crie um banco de dados vazio na sua hospedagem
+
+6° Crie uma conta de e-mail na sua hospedagem
+
+7° Acesse o seu site e faça a instalação do Mautic
+
+	- Configure os dados do banco de dados
+	- Configure os acessos do admin
+	- Configure o SMTP do servidor de e-mails
+  
+8° Prontinho, instalação concluída
+
+9° Configure as tarefas de Crons do Mautic
+Veja a continuação por aqui: https://github.com/Fernando97136/Tutoriais/blob/master/script_cron_mautic
