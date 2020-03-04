@@ -1,0 +1,11 @@
+RENAME table 'wp_commentmeta' TO 'novo_prefixo_commentmeta';
+RENAME table 'wp_comments' TO 'novo_prefixo_comments';
+RENAME table 'wp_links' TO 'novo_prefixo_links';
+RENAME table 'wp_options' TO 'novo_prefixo_options';
+RENAME table 'wp_postmeta' TO 'novo_prefixo_postmeta';
+RENAME table 'wp_posts' TO 'novo_prefixo_posts';
+RENAME table 'wp_terms' TO 'novo_prefixo_terms';
+RENAME table 'wp_term_relationships' TO 'novo_prefixo_term_relationships';
+RENAME table 'wp_term_taxonomy' TO 'novo_prefixo_term_taxonomy';
+RENAME table 'wp_usermeta' TO 'novo_prefixo_usermeta';
+RENAME table 'wp_users' TO 'novo_prefixo_users';
