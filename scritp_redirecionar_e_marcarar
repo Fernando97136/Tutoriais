@@ -1,0 +1,9 @@
+<frameset rows="0,*" border="0">
+<frame name="header" scrolling="no" noresize target="main">
+<frame name="main" src="http://WWW.SITE_DESTINO.COM.BR">
+<noframes>
+<body>
+ 
+</body>
+</noframes>
+</frameset>
