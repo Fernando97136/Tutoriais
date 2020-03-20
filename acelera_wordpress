@@ -1,0 +1,54 @@
+########## Begin - ETag Optimization
+## This rule will create an ETag for files based only on the modification
+## timestamp and their size.
+## Note: It may cause problems on your server and you may need to remove it
+FileETag MTime Size
+# AddOutputFilterByType is now deprecated by Apache. Use mod_filter in the future.
+AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript
+# Enable expiration control
+ExpiresActive On
+# Default expiration: 1 hour after request
+ExpiresDefault "now plus 1 hour"
+# CSS and JS expiration: 1 week after request
+ExpiresByType text/css "now plus 1 week"
+ExpiresByType application/javascript "now plus 1 week"
+ExpiresByType application/x-javascript "now plus 1 week"
+
+# Image files expiration: 1 month after request
+ExpiresByType image/bmp "now plus 1 month"
+ExpiresByType image/gif "now plus 1 month"
+ExpiresByType image/jpeg "now plus 1 month"
+ExpiresByType image/jp2 "now plus 1 month"
+ExpiresByType image/pipeg "now plus 1 month"
+ExpiresByType image/png "now plus 1 month"
+ExpiresByType image/svg+xml "now plus 1 month"
+ExpiresByType image/tiff "now plus 1 month"
+ExpiresByType image/vnd.microsoft.icon "now plus 1 month"
+ExpiresByType image/x-icon "now plus 1 month"
+ExpiresByType image/ico "now plus 1 month"
+ExpiresByType image/icon "now plus 1 month"
+ExpiresByType text/ico "now plus 1 month"
+ExpiresByType application/ico "now plus 1 month"
+ExpiresByType image/vnd.wap.wbmp "now plus 1 month"
+ExpiresByType application/vnd.wap.wbxml "now plus 1 month"
+
+ExpiresByType application/smil "now plus 1 month"
+# Audio files expiration: 1 month after request
+ExpiresByType audio/basic "now plus 1 month"
+ExpiresByType audio/mid "now plus 1 month"
+ExpiresByType audio/midi "now plus 1 month"
+ExpiresByType audio/mpeg "now plus 1 month"
+ExpiresByType audio/x-aiff "now plus 1 month"
+ExpiresByType audio/x-mpegurl "now plus 1 month"
+ExpiresByType audio/x-pn-realaudio "now plus 1 month"
+ExpiresByType audio/x-wav "now plus 1 month"
+
+# Movie files expiration: 1 month after request
+ExpiresByType application/x-shockwave-flash "now plus 1 month"
+ExpiresByType x-world/x-vrml "now plus 1 month"
+ExpiresByType video/x-msvideo "now plus 1 month"
+ExpiresByType video/mpeg "now plus 1 month"
+ExpiresByType video/mp4 "now plus 1 month"
+ExpiresByType video/quicktime "now plus 1 month"
+ExpiresByType video/x-la-asf "now plus 1 month"
+ExpiresByType video/x-ms-asf "now plus 1 month"
