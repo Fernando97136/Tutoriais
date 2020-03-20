@@ -52,3 +52,7 @@ ExpiresByType video/mp4 "now plus 1 month"
 ExpiresByType video/quicktime "now plus 1 month"
 ExpiresByType video/x-la-asf "now plus 1 month"
 ExpiresByType video/x-ms-asf "now plus 1 month"
+
+<filesMatch ".(ico|pdf|flv|jpg|svg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=84600, public"
+</filesMatch>
